@@ -10,6 +10,8 @@ public class UIContoller : MonoBehaviour
     bool timerIsRunnning = false;
     GameObject scoreText;
     GameObject timerText;
+    public GameObject unko;
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private static UIContoller instance;
 
@@ -17,6 +19,7 @@ public class UIContoller : MonoBehaviour
     {
         this.scoreText = GameObject.Find("score");
         this.timerText = GameObject.Find("timer");
+
 
         SceneManager.sceneLoaded += OnSceneLoaded;
         if (instance == null)

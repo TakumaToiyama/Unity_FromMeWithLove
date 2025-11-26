@@ -1,31 +1,37 @@
 using System;
 using System.Collections.Generic;
+using Microsoft.Unity.VisualStudio.Editor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class GenPresentBox : MonoBehaviour
 {
     public GameObject presentBox;
+    private consecutiveTimesControler consecutiveControler;
     List<PresentController> PresentsList = new List<PresentController>();
-    float consecutiveTimes;
+    // int consecutiveTimes;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Awake()
-    {
-        SceneManager.sceneLoaded += OnSceneLoaded;
-    }
+    // void Awake()
+    // {
+    //     SceneManager.sceneLoaded += OnSceneLoaded;
+    // }
     void Start()
     {
         genBox(0);
         genBox(-5);
         genBox(-10);
+
+        GameObject CanvasObject = GameObject.FindWithTag("Canvas");
+        // 【重要】Findで得られたGameObjectからGetComponentを使ってスクリプトを取得する
+        consecutiveControler = CanvasObject.GetComponent<consecutiveTimesControler>();
     }
 
-    void OnSceneLoaded( Scene scene, LoadSceneMode mode)
-    {
-        if (scene.name == "MainScene")
-            consecutiveTimes = 0;
-    }
+    // void OnSceneLoaded( Scene scene, LoadSceneMode mode)
+    // {
+    //     if (scene.name == "MainScene")
+    //         consecutiveTimes = 0;
+    // }
 
     
 
@@ -41,18 +47,24 @@ public class GenPresentBox : MonoBehaviour
 
                 GameObject.Find("Canvas").GetComponent<UIContoller>().AddScore();
 
-                consecutiveTimes++;
-                if (consecutiveTimes == 20)
+                // consecutiveTimes++;
+                consecutiveControler.addConsecutiveTimes();
+                
+                // if (consecutiveTimes == 20)
+                if (consecutiveControler.getConsecutiveTimes() == 20)
                 {
                     GameObject.Find("Canvas").GetComponent<UIContoller>().AddTimeRemaining();
-                    consecutiveTimes = 0;
+                    // consecutiveTimes = 0;
+                    consecutiveControler.resetConsecutiveTimes();
                 }
             } else 
             {
-                consecutiveTimes = 0;
+                // consecutiveTimes = 0;
+                consecutiveControler.resetConsecutiveTimes();
             }
 
-        Debug.Log(consecutiveTimes);
+        // Debug.Log(consecutiveTimes);
+            Debug.Log(consecutiveControler.getConsecutiveTimes());
         }
         
 
