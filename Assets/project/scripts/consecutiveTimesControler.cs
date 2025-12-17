@@ -15,7 +15,6 @@ public class consecutiveTimesControler : MonoBehaviour
     void Awake()
     {
         SceneManager.sceneLoaded += OnSceneLoaded;
-        // consectiveImage = GetComponent<Image>();
         rectTransform = GetComponent<RectTransform>();
         rectTransform.anchoredPosition = initialPosition;
     }
@@ -27,6 +26,7 @@ public class consecutiveTimesControler : MonoBehaviour
     void OnDestroy()
     {
         Debug.Log("destroy");
+        SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 
 
@@ -34,8 +34,13 @@ public class consecutiveTimesControler : MonoBehaviour
     {
         if (scene.name == "MainScene")
         {
+            rectTransform = GetComponent<RectTransform>();
             consecutiveTimes = 0;
-            rectTransform.anchoredPosition = initialPosition;
+
+            if (rectTransform != null)
+            {
+                rectTransform.anchoredPosition = initialPosition;
+            }
         }
     }
 
@@ -64,7 +69,11 @@ public class consecutiveTimesControler : MonoBehaviour
 
     public void moveConsecutiveImage()
     {
+        if (rectTransform != null)
+        {
+            
         Vector2 newPosition = new Vector2(initialPosition.x + (consecutiveTimes * 15), initialPosition.y);
         rectTransform.anchoredPosition = newPosition;
+        }
     }
 }

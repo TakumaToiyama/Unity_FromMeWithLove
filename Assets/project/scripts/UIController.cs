@@ -15,10 +15,6 @@ public class UIContoller : MonoBehaviour
 
     void Awake()
     {
-        this.scoreText = GameObject.Find("score");
-        this.timerText = GameObject.Find("timer");
-
-
         SceneManager.sceneLoaded += OnSceneLoaded;
         if (instance == null)
         {
@@ -36,11 +32,14 @@ public class UIContoller : MonoBehaviour
 
     void OnSceneLoaded( Scene scene, LoadSceneMode mode)
     {
+        this.scoreText = GameObject.Find("score");
+        this.timerText = GameObject.Find("timer");
+
         if (scene.name == "MainScene")
         {
             timerIsRunnning = true;
             score = 0;
-            timeRemaining = 30;
+            timeRemaining = 5;
         } else
         {
             
@@ -66,8 +65,15 @@ public class UIContoller : MonoBehaviour
             }
         }
         
-        scoreText.GetComponent<TMP_Text>().text = "Score : " + score.ToString("D4");
-        timerText.GetComponent<TMP_Text>().text = "" + Math.Round(timeRemaining,1);
+        if (scoreText != null)
+        {
+             scoreText.GetComponent<TMP_Text>().text = "Score : " + score.ToString("D4");
+        }
+
+        if (timerText != null)
+        {
+            timerText.GetComponent<TMP_Text>().text = "" + Math.Round(timeRemaining,1);
+        }
     }
 
     public void AddScore()
@@ -79,5 +85,10 @@ public class UIContoller : MonoBehaviour
     {
         timeRemaining++;
         Debug.Log("Add time");
+    }
+
+    void OnDestroy()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;        
     }
 }
