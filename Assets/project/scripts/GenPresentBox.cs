@@ -9,9 +9,9 @@ public class GenPresentBox : MonoBehaviour
     public GameObject presentBox;
     private consecutiveTimesControler consecutiveControler;
     List<PresentController> PresentsList = new List<PresentController>();
-    Vector3 box1 = new Vector3(0f,-1f,0);
-    Vector3 box2 = new Vector3(-3.65f,-1f,0);
-    Vector3 box3 = new Vector3(-7.3f,-1f,0);
+    Vector3 box1 = new Vector3(0f,-1.83f,0);
+    Vector3 box2 = new Vector3(-3.65f,-1.83f,0);
+    Vector3 box3 = new Vector3(-7.3f,-1.83f,0);
     void Start()
     {
         genBox(box1);

@@ -127,27 +127,6 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: coal
-    originalName: 
-    pivot: {x: 0.4666667, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 100
-      width: 15
-      height: 16
-    spriteID: 3e755248866df6e4798365490c98d699
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 100}
   - name: red
     originalName: 
     pivot: {x: 0.5, y: 0}
@@ -198,8 +177,8 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 4
-      y: 52
+      x: 28
+      y: 4
       width: 16
       height: 16
     spriteID: 14b72272a50ad80429881c4e8a28b56e
@@ -210,7 +189,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 52}
+    uvTransform: {x: 28, y: 4}
   - name: yellow
     originalName: 
     pivot: {x: 0.5, y: 0}
@@ -219,8 +198,8 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 4
-      y: 76
+      x: 28
+      y: 28
       width: 16
       height: 16
     spriteID: 0daaf5a4411f7f243b832c754c5b7a5e
@@ -231,36 +210,11 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 76}
+    uvTransform: {x: 28, y: 28}
   spriteSheetImportData: []
   tileSetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    uuid:
-      value0: 204391461
-      value1: 0
-      value2: 0
-      value3: 0
-    guid: 0
-    name: coal
-    layerFlags: 3
-    layerType: 0
-    blendMode: 0
-    cells:
-    - name: coal
-      frameIndex: 0
-      additiveSortOrder: 0
-      cellRect:
-        x: 1
-        y: 0
-        width: 15
-        height: 16
-      spriteId: 3e755248866df6e4798365490c98d699
-    linkedCells: []
-    tileCells: []
-    tileSetIndex: 0
-    parentIndex: -1
-  - layerIndex: 1
     uuid:
       value0: 3021628819
       value1: 0
@@ -285,7 +239,7 @@ ScriptedImporter:
     tileCells: []
     tileSetIndex: 0
     parentIndex: -1
-  - layerIndex: 2
+  - layerIndex: 1
     uuid:
       value0: 2395475982
       value1: 0
@@ -310,7 +264,7 @@ ScriptedImporter:
     tileCells: []
     tileSetIndex: 0
     parentIndex: -1
-  - layerIndex: 3
+  - layerIndex: 2
     uuid:
       value0: 3510813699
       value1: 0
@@ -335,7 +289,7 @@ ScriptedImporter:
     tileCells: []
     tileSetIndex: 0
     parentIndex: -1
-  - layerIndex: 4
+  - layerIndex: 3
     uuid:
       value0: 777188166
       value1: 0
@@ -390,4 +344,4 @@ ScriptedImporter:
   secondarySpriteTextures: []
   spritePackingTag: 
   canvasSize: {x: 16, y: 16}
-  previousTextureSize: {x: 64, y: 128}
+  previousTextureSize: {x: 64, y: 64}

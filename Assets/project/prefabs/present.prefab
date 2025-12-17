@@ -28,7 +28,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 9, y: 9, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -103,4 +103,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c341bf0e791e1f54c885f21e8d006595, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PresentController
-  speed: 100
+  presentSprites:
+  - {fileID: -7727697135921001878, guid: 9c1088fbe169b4d4b8ada141df2503b2, type: 3}
+  - {fileID: 5320710496198642830, guid: 9c1088fbe169b4d4b8ada141df2503b2, type: 3}
+  - {fileID: -6833889048015628441, guid: 9c1088fbe169b4d4b8ada141df2503b2, type: 3}
+  - {fileID: 176498825010103904, guid: 9c1088fbe169b4d4b8ada141df2503b2, type: 3}
+  - {fileID: 3826399747478417885, guid: 9c1088fbe169b4d4b8ada141df2503b2, type: 3}
+  - {fileID: -7608493549510381473, guid: 9c1088fbe169b4d4b8ada141df2503b2, type: 3}
+  - {fileID: -7308176099012303414, guid: 9c1088fbe169b4d4b8ada141df2503b2, type: 3}
+  - {fileID: -7966161884403460817, guid: 9c1088fbe169b4d4b8ada141df2503b2, type: 3}
+  - {fileID: -8143980786703546904, guid: 9c1088fbe169b4d4b8ada141df2503b2, type: 3}
+  - {fileID: -8143980786703546904, guid: 9c1088fbe169b4d4b8ada141df2503b2, type: 3}
