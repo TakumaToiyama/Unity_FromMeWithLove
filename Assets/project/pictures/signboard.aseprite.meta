@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 41dab4beaac0cf14dadd82d67d7190fb
+guid: 251de19626eaf4f4f933dbe38a824f8b
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -80,7 +80,7 @@ ScriptedImporter:
     customPivotPosition: {x: 0.5, y: 0.5}
     mosaicPadding: 4
     spritePadding: 0
-    generateModelPrefab: 0
+    generateModelPrefab: 1
     generateAnimationClips: 1
     addSortingGroup: 1
     addShadowCasters: 0
@@ -95,14 +95,14 @@ ScriptedImporter:
     customPivotPosition: {x: 0.5, y: 0.5}
     mosaicPadding: 4
     spritePadding: 0
-    generateModelPrefab: 0
+    generateModelPrefab: 1
     generateAnimationClips: 1
     addSortingGroup: 1
     addShadowCasters: 0
     generateIndividualEvents: 1
     generateSpriteAtlas: 1
   importFileNodeState: 1
-  platformSettingsDirtyTick: 639015942349236581
+  platformSettingsDirtyTick: 0
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -127,9 +127,9 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: christmas0
+  - name: signboard
     originalName: 
-    pivot: {x: 0.49689442, y: 0.12280702}
+    pivot: {x: 0.5071429, y: -0.06451613}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -137,9 +137,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 161
-      height: 114
-    spriteID: 25dc73732e10577429d590df3a2017e4
+      width: 140
+      height: 31
+    spriteID: f4b21a363eb12f24fa87542eca0cd891
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -153,57 +153,33 @@ ScriptedImporter:
   asepriteLayers:
   - layerIndex: 0
     uuid:
-      value0: 331904926
+      value0: 291677329
       value1: 0
       value2: 0
       value3: 0
     guid: 0
-    name: christmas0
+    name: signboard
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: christmas0
+    - name: signboard
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 0
-        y: -14
-        width: 161
-        height: 114
-      spriteId: 25dc73732e10577429d590df3a2017e4
+        x: 9
+        y: 2
+        width: 140
+        height: 31
+      spriteId: f4b21a363eb12f24fa87542eca0cd891
     linkedCells: []
     tileCells: []
     tileSetIndex: 0
     parentIndex: -1
   tileSets: []
-  platformSettings:
-  - name: DefaultTexturePlatform
-    overridden: 0
-    ignorePlatformSupport: 0
-    maxTextureSize: 16384
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
-  - name: Standalone
-    overridden: 0
-    ignorePlatformSupport: 0
-    maxTextureSize: 16384
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
+  platformSettings: []
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 160, y: 100}
-  previousTextureSize: {x: 256, y: 128}
+  canvasSize: {x: 160, y: 32}
+  previousTextureSize: {x: 256, y: 64}

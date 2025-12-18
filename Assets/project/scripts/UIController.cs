@@ -67,7 +67,7 @@ public class UIContoller : MonoBehaviour
         
         if (scoreText != null)
         {
-             scoreText.GetComponent<TMP_Text>().text = "Score : " + score.ToString("D4");
+             scoreText.GetComponent<TMP_Text>().text = "SCORE:" + score.ToString();
         }
 
         if (timerText != null)
